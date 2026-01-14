@@ -1,27 +1,11 @@
 'use client';
 
 import React from 'react';
-import { motion, useMotionValue, useTransform } from 'framer-motion';
-import { heroText, floatingOrb, ctaButton } from '@/lib/motions';
+import { motion } from 'framer-motion';
+import { heroText, floatingOrb } from '@/lib/motions';
+import { MagneticButton } from '@/components/ui/cursor/magnetic-button';
 
 export default function HeroSection() {
-  const x = useMotionValue(0)
-  const y = useMotionValue(0)
-
-  const transformX = useTransform(x, [-50, 50], [-8, 8])
-  const transformY = useTransform(y, [-50, 50], [-8, 8])
-
-  const handleMouseMove = (e: React.MouseEvent<HTMLButtonElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect()
-    x.set(e.clientX - rect.left - rect.width / 2)
-    y.set(e.clientY - rect.top - rect.height / 2)
-  }
-
-  const handleMouseLeave = () => {
-    x.set(0)
-    y.set(0)
-  }
-
   return (
     <section className="relative bg-[url('https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/gridBackground.png')] w-full bg-no-repeat bg-cover bg-center text-sm min-h-screen flex flex-col items-center justify-center py-20 px-4 overflow-hidden">
       {/* Hero Background Glow (Floating Orb) */}
@@ -58,30 +42,19 @@ export default function HeroSection() {
         </p>
 
         <div className="mx-auto w-full flex items-center justify-center gap-3 mt-8">
-          <motion.button
-            variants={ctaButton}
-            initial="rest"
-            whileHover="hover"
-            whileTap="tap"
-            style={{ x: transformX, y: transformY }}
-            onMouseMove={handleMouseMove}
-            onMouseLeave={handleMouseLeave}
+          <MagneticButton
             className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-full font-medium transition-all shadow-sm"
           >
             Get Started
-          </motion.button>
-          <motion.button
-            variants={ctaButton}
-            initial="rest"
-            whileHover="hover"
-            whileTap="tap"
-            className="flex items-center gap-2 border border-border hover:bg-secondary rounded-full px-8 py-3 transition-colors text-foreground"
+          </MagneticButton>
+          <MagneticButton
+            className="flex items-center gap-2 border border-border bg-transparent hover:bg-secondary rounded-full px-8 py-3 transition-colors text-foreground"
           >
             <span>Learn More</span>
             <svg width="6" height="8" viewBox="0 0 6 8" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
               <path d="M1.25.5 4.75 4l-3.5 3.5" stroke="currentColor" strokeOpacity=".6" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-          </motion.button>
+          </MagneticButton>
         </div>
       </motion.div>
     </section>

@@ -6,10 +6,14 @@ import { ProjectShowcase } from "@/components/ui/project-showcase";
 import { LogoCloud } from "@/components/ui/logo-cloud-2";
 import { ExperienceSection } from "@/components/ui/experience-section";
 import { pageTransition, sectionReveal } from "@/lib/motions";
+import { SmoothCursor } from "@/components/ui/cursor/smooth-cursor";
+import { CursorSpotlight } from "@/components/ui/cursor/cursor-spotlight";
 
 export default function Home() {
   return (
     <AnimatePresence>
+      <SmoothCursor />
+      <CursorSpotlight />
       <motion.main
         variants={pageTransition}
         initial="initial"
