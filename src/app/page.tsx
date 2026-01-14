@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import HeroSection from "@/components/ui/hero-section";
+import { AboutSection } from "@/components/ui/about-section";
 import { ProjectShowcase } from "@/components/ui/project-showcase";
 import { LogoCloud } from "@/components/ui/logo-cloud-2";
 import { ExperienceSection } from "@/components/ui/experience-section";
@@ -18,6 +19,8 @@ export default function Home() {
         className="flex flex-col items-center"
       >
         <HeroSection />
+
+        <AboutSection />
 
         <ProjectShowcase />
 
