@@ -5,6 +5,9 @@ import HeroSection from "@/components/ui/hero-section";
 import { ProjectShowcase } from "@/components/ui/project-showcase";
 import { LogoCloud } from "@/components/ui/logo-cloud-2";
 import { ExperienceSection } from "@/components/ui/experience-section";
+import { ProfileSection } from "@/components/ui/profile-section";
+import { Footer } from "@/components/ui/footer";
+
 import { pageTransition, sectionReveal } from "@/lib/motions";
 
 export default function Home() {
@@ -30,8 +33,11 @@ export default function Home() {
         >
           <LogoCloud />
         </motion.section>
-
         <ExperienceSection />
+        <ProfileSection />
+
+        <Footer />
+
       </motion.main>
     </AnimatePresence>
   );

@@ -108,3 +108,25 @@ export const pageTransition: Variants = {
     },
     exit: { opacity: 0, y: -20 }
 }
+
+export const profileCardAnimation: Variants = {
+    hidden: { opacity: 0, rotate: 0, scale: 0.9 },
+    show: {
+        opacity: 1,
+        rotate: 3,
+        scale: 1,
+        transition: {
+            duration: 0.8,
+            ease: "easeOut"
+        }
+    },
+    hover: {
+        scale: 1.05,
+        rotate: 0,
+        transition: {
+            type: "spring",
+            stiffness: 300,
+            damping: 20
+        }
+    }
+}

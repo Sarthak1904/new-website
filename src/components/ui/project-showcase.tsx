@@ -104,7 +104,7 @@ export function ProjectShowcase() {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, margin: "-80px" }}
-            className="relative w-full max-w-5xl mx-auto px-6 py-32"
+            className="relative w-full max-w-[70%] mx-auto px-6 py-32"
         >
             <h2 className="text-muted-foreground text-sm font-medium tracking-wide uppercase mb-8">Selected Work</h2>
 

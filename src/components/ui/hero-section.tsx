@@ -48,12 +48,12 @@ export default function HeroSection() {
         </div>
 
         <motion.h1
-          className="text-4xl md:text-7xl font-semibold tracking-tight max-w-[850px] text-center mx-auto mt-8 text-foreground"
+          className="text-4xl md:text-7xl font-semibold tracking-tight max-w-[1000px] text-center mx-auto mt-8 text-foreground"
         >
           Build apps faster with ui components
         </motion.h1>
 
-        <p className="text-sm md:text-base mx-auto max-w-2xl text-center mt-6 max-md:px-2 text-muted-foreground leading-relaxed">
+        <p className="text-sm md:text-base mx-auto max-w-3xl text-center mt-6 max-md:px-2 text-muted-foreground leading-relaxed">
           Build sleek, consistent UIs without wrestling with design systems, our components handle the heavy lifting so you can ship faster.
         </p>
 
