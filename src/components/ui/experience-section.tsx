@@ -3,27 +3,28 @@
 import React, { useState } from "react"
 import { motion } from "framer-motion"
 import { sectionReveal } from "@/lib/motions"
+import Link from "next/link"
 import Image from "next/image"
 
 const experiences = [
     {
         id: "02",
-        role: "Ambassador",
-        company: "@ Figma",
+        role: "Software Engineer",
+        company: "@ IU Bloomington",
         hoverColor: "#E10600",
         textColor: "#FFFFFF"
     },
     {
         id: "03",
-        role: "UX Design",
-        company: "@ Oshkosh",
+        role: "Software Engineer",
+        company: "@ DataToBiz",
         hoverColor: "#CBFF58",
         textColor: "#000000"
     },
     {
         id: "04",
-        role: "UX Design",
-        company: "@ BMW",
+        role: "Software Engineer",
+        company: "@ Nakshatra Upscale",
         hoverColor: "#00B4D8",
         textColor: "#FFFFFF"
     }
@@ -50,12 +51,12 @@ export function ExperienceSection() {
                         className="relative bg-[#FF6600] rounded-[2.5rem] p-10 overflow-hidden min-h-[340px] flex flex-col justify-between transition-all duration-300 shadow-xl shadow-orange-500/10"
                     >
                         <div className="relative z-10">
-                            <h3 className="text-white text-4xl font-bold tracking-tight mb-1">UX Design Intern</h3>
-                            <p className="text-white/90 text-xl font-medium">@ Amazon Rufus AI</p>
+                            <h3 className="text-white text-4xl font-bold tracking-tight mb-1">AI Software Engineer</h3>
+                            <p className="text-white/90 text-xl font-medium">@ Interlinked</p>
                         </div>
 
                         <div className="relative z-10 inline-flex items-center self-start px-6 py-2 rounded-full bg-white/15 backdrop-blur-md border border-white/20 shadow-lg">
-                            <span className="text-white font-bold text-base tracking-tight">Summer 2025</span>
+                            <span className="text-white font-bold text-base tracking-tight">Berkley, CA</span>
                         </div>
 
                         {/* Large Background Number */}
@@ -131,7 +132,7 @@ export function ExperienceSection() {
                             {/* Blue masked image */}
                             <div className="w-1/3 h-full relative rounded-3xl overflow-hidden shadow-sm">
                                 <Image
-                                    src="https://images.unsplash.com/photo-1542744094-24638eff58bb?q=80&w=688&auto=format&fit=crop"
+                                    src="/images/office-blue.png"
                                     alt="Office detail"
                                     fill
                                     sizes="20vw"
@@ -141,7 +142,7 @@ export function ExperienceSection() {
                             </div>
                             <div className="w-1/3 h-full relative rounded-3xl overflow-hidden shadow-sm">
                                 <Image
-                                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1471&auto=format&fit=crop"
+                                    src="/images/team.jpg"
                                     alt="Team discussion"
                                     fill
                                     sizes="20vw"
@@ -162,9 +163,11 @@ export function ExperienceSection() {
 
                     {/* Moved "See all" Button - 75% width */}
                     <div className="mt-8 flex justify-center">
-                        <button className="w-3/4 bg-black hover:bg-black/90 text-white py-4 rounded-full text-base font-semibold transition-all duration-300 shadow-lg">
-                            See all
-                        </button>
+                        <Link href="/about#story" className="w-3/4">
+                            <button className="w-full bg-black hover:bg-black/90 text-white py-4 rounded-full text-base font-semibold transition-all duration-300 shadow-lg">
+                                My Journey
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>

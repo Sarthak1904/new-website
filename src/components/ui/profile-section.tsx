@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { profileCardAnimation } from "@/lib/motions";
 import Image from "next/image";
-import { Plus } from "lucide-react";
+import { Plus, Linkedin, Instagram } from "lucide-react";
 
 export function ProfileSection() {
     return (
@@ -21,29 +21,25 @@ export function ProfileSection() {
                     {/* Action Row */}
                     <div className="flex items-center gap-4">
                         <div className="flex -space-x-4 items-center mr-4">
-                            <div className="w-14 h-14 rounded-full border-4 border-white bg-[#0055FF] flex items-center justify-center overflow-hidden shadow-lg z-10 p-2">
-                                <Image
-                                    src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg"
-                                    alt="Amazon"
-                                    width={32}
-                                    height={32}
-                                    className="object-contain invert"
-                                />
-                            </div>
-                            <div className="w-14 h-14 rounded-[1.25rem] border-4 border-white bg-[#FF6600] flex items-center justify-center shadow-lg z-20 overflow-hidden rotate-[-5deg] p-3">
-                                <Image
-                                    src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg"
-                                    alt="Amazon"
-                                    width={32}
-                                    height={32}
-                                    className="object-contain invert"
-                                />
-                            </div>
+                            <a
+                                href="https://www.linkedin.com/in/sarchou/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-14 h-14 rounded-full border-4 border-white bg-[#0A66C2] flex items-center justify-center overflow-hidden shadow-lg z-10 transition-transform hover:scale-110 active:scale-95"
+                            >
+                                <Linkedin className="text-white fill-white" size={24} />
+                            </a>
+                            <a
+                                href="https://www.instagram.com/sc.uncaptured/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-14 h-14 rounded-[1.25rem] border-4 border-white bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] flex items-center justify-center shadow-lg z-20 overflow-hidden rotate-[-5deg] transition-transform hover:scale-110 active:scale-95"
+                            >
+                                <Instagram className="text-white" size={24} />
+                            </a>
                         </div>
 
-                        <button className="bg-white border border-gray-200 text-gray-900 px-8 py-4 rounded-full text-base font-bold hover:bg-gray-50 transition-colors shadow-sm">
-                            Resume
-                        </button>
+
 
                         <button className="bg-[#262626] text-white px-8 py-4 rounded-full text-base font-bold hover:bg-black transition-colors shadow-lg">
                             About Me
@@ -64,7 +60,7 @@ export function ProfileSection() {
                         {/* Profile Image Container */}
                         <div className="relative aspect-[4/5] rounded-[2rem] overflow-hidden bg-[#1A1A1A]">
                             <Image
-                                src="/images/profile.png"
+                                src="/images/sarthak-profile.jpg"
                                 alt="Sarthak"
                                 fill
                                 className="object-cover"
@@ -79,7 +75,7 @@ export function ProfileSection() {
                             <div className="flex items-center gap-3">
                                 <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-white shadow-sm">
                                     <Image
-                                        src="/images/profile.png"
+                                        src="/images/sarthak-profile.jpg"
                                         alt="Avatar"
                                         width={40}
                                         height={40}
@@ -87,15 +83,20 @@ export function ProfileSection() {
                                     />
                                 </div>
                                 <div>
-                                    <p className="text-[13px] font-bold text-gray-900 leading-none">@sarthak</p>
+                                    <p className="text-[13px] font-bold text-gray-900 leading-none">@sarchou</p>
                                     <p className="text-[11px] font-medium text-gray-400 mt-1">LinkedIn</p>
                                 </div>
                             </div>
 
-                            <button className="flex items-center gap-2 bg-black text-white px-5 py-2.5 rounded-2xl text-[13px] font-bold hover:bg-neutral-800 transition-colors">
+                            <a
+                                href="https://www.linkedin.com/in/sarchou/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-2 bg-black text-white px-5 py-2.5 rounded-2xl text-[13px] font-bold hover:bg-neutral-800 transition-colors"
+                            >
                                 <Plus size={16} />
                                 Connect
-                            </button>
+                            </a>
                         </div>
                     </motion.div>
                 </div>

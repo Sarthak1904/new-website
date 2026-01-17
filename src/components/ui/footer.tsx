@@ -14,7 +14,7 @@ export function Footer() {
     };
 
     return (
-        <footer className="w-full bg-[#e0e0da] py-32 px-10 md:px-20 relative overflow-hidden flex flex-col items-center justify-center min-h-[60vh]">
+        <footer id="contact" className="w-full bg-[#e0e0da] py-32 px-10 md:px-20 relative overflow-hidden flex flex-col items-center justify-center min-h-[60vh]">
             <PixelTrail
                 pixelSize={48}
                 fadeDuration={600}

@@ -159,7 +159,7 @@ export default function AboutSection1() {
                     timelineRef={heroRef}
                     className="bg-blue-600 hover:bg-blue-600 shadow-lg shadow-blue-600 border border-blue-600 flex w-fit mx-auto gap-2 hover:gap-4 transition-all duration-300 ease-in-out text-white px-5 py-3 rounded-full cursor-pointer"
                 >
-                    Explore Our Services <ArrowRight className="" />
+                    Connect with me <ArrowRight className="" />
                 </TimelineContent>
             </div>
             <div className="max-w-6xl mx-auto grid grid-cols-4 gap-4 pt-20 lg:h-[26rem] md:h-[22rem] sm:h-[16rem] h-[14rem]">
@@ -173,8 +173,8 @@ export default function AboutSection1() {
                     style={{ clipPath: "url(#clip-squiggle)" }}
                 >
                     <img
-                        src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="Team member"
+                        src="/images/sarthak-lake.jpg"
+                        alt="Sarthak by the lake"
                         width={128}
                         height={160}
                         className="object-cover w-full h-full rotate-6"
@@ -190,8 +190,8 @@ export default function AboutSection1() {
                     style={{ clipPath: "url(#differentone16)" }}
                 >
                     <img
-                        src="https://images.unsplash.com/photo-1609179242555-1d7b4b0a568c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="Team member"
+                        src="/images/sarthak-ferris.jpg"
+                        alt="At Navy Pier"
                         width={128}
                         height={160}
                         className="object-cover w-full h-full -rotate-6"
@@ -208,8 +208,8 @@ export default function AboutSection1() {
                     style={{ clipPath: "url(#differentone8)" }}
                 >
                     <img
-                        src="https://images.unsplash.com/photo-1611695434398-4f4b330623e6?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="Team member"
+                        src="/images/sarthak-walking.jpg"
+                        alt="Walking in city"
                         width={128}
                         height={160}
                         className="object-cover w-full h-full -rotate-6"
@@ -226,8 +226,8 @@ export default function AboutSection1() {
                     style={{ clipPath: "url(#clip-rect)" }}
                 >
                     <img
-                        src="https://images.unsplash.com/photo-1567934872913-aacea74458b7?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="Team member"
+                        src="/images/sarthak-whiteboard.png"
+                        alt="System Design Session"
                         width={128}
                         height={160}
                         className="object-cover w-full h-full rotate-6"
